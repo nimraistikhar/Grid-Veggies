@@ -1,0 +1,202 @@
+/*
+.container {
+    background-color: #fff;
+
+    display: grid;
+    grid-template-rows: 110px 230px 220px 190px;
+    grid-template-columns: repeat(2 , 195px) 700px 250px;
+    grid-gap: 1px;
+}
+
+.item {
+    background-color: darkblue;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.item--1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+.item--2 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+
+.item--3 {
+    grid-row: 1 / 5;
+    grid-column: 4 / 5;
+}
+
+.item--4 {
+    grid-row: 3 / 5;
+    grid-column: 1 / 3;
+}
+
+.item--5 {
+    grid-row: 3 / 5;
+    grid-column: 3 / 4;
+}
+
+.item--6 {
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    border-radius: 30px;
+    background-color: rgb(164, 216, 236);
+}
+
+.item--6:hover {
+    color: #fff;
+}
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    width: 50%;
+    margin: 2rem 5rem;
+    position: relative;
+}
+
+.gallery {
+    display: grid;
+    grid-template-rows: 160px 230px 220px 190px;
+    grid-template-columns: repeat(2 , 195px) 700px 250px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--3 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+
+.gallery__item--5 {
+    grid-row: 3 / 5;
+    grid-column: 1 / 3;
+}
+
+.gallery__item--6 {
+    grid-row: 3 / 5;
+    grid-column: 3 / 4;
+}
+
+.gallery__item--2 {
+    grid-row: 1 / 5;
+    grid-column: 4 / 5;
+}
+
+.gallery__item--1 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+
+.image {
+    height: 45vh;
+    background-image: linear-gradient(to right, #7ed56f3d, #487a6a93), url('../Grids-and-veggies/img/4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vh;
+    object-fit: cover;
+    border: 1px  solid transparent;
+    border-radius: 15% 15% 15% 15%;
+    position: absolute;
+    top: 22%;
+    left: 30%;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  position: absolute;
+  top: 38%;
+  left: 49%;
+  color: rgb(13, 63, 13);
+}
